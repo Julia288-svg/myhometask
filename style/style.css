@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Cera-Pro-Regular;
+    src: url('../fonts/CeraPro-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-Pro-Medium;
+    src: url('../fonts/CeraPro-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-Pro-Bold;
+    src: url('../fonts/CeraPro-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+.container {
+    padding: 30px 120px 52px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(70, 163, 88, 0.50);
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 12px;
+}
+
+.header > .logo {
+    padding-bottom: 17px;
+}
+
+.header > button {
+    margin-bottom: 17px !important;
+}
+
+.header > .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 8px;
+}
+
+.header > .nav > li {
+font-family: Cera-Pro-Regular;
+border-bottom: 3px solid transparent;
+color: #3D3D3D;
+font-size: 16px;
+padding-bottom: 25px;
+}
+
+.header > .nav > li.active {
+    font-family: Cera-Pro-Bold;
+    border-color: #46A358;
+}
+
+.header > .login {
+    border: none;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 7px 17px;
+    font-family: Cera-Pro-Medium;
+}
+
+.main {
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+    display: flex;
+}
+
+.main > .ctaContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    justify-content: start;
+    padding: 68px 0px 85px 45px;
+}
+
+.main > .ctaContainer > .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 7px;
+}
+
+.main > .ctaContainer > .textContainer > h1 {
+    font-family: Cera-Pro-Bold;
+    font-size: 70px;
+    color: #3D3D3D;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.main > .ctaContainer > .textContainer > h1 > .colored {
+    color: #46A358;
+}
+
+.main > .ctaContainer > .textContainer > h5 {
+    color: #3D3D3D;
+    font-family: Cera-Pro-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.main > .ctaContainer > .textContainer > h6 {
+    color: #727272;
+    font-family: Cera-Pro-Regular;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px; 
+    width: 86%;
+}
+
+.main > .ctaContainer > .ctaButton {
+    color: #FFF;
+    border-radius: 6px;
+    border: none;
+    background: #46A358;
+    font-family: Cera-Pro-Bold;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px; 
+    text-transform: uppercase;
+    padding: 10px 26px;
+    max-width: 140px;
+}
+
+.main > .imgContainer {
+    background-image: url('../img/flower_big.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 500px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+}
+
+.main > .imgContainer > img {
+    max-width: 135px;
+    max-height: 135px;
+    
+}
