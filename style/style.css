@@ -1,0 +1,205 @@
+@font-face {
+    font-family: Cera-Pro-Regular;
+    src: url('../fonts/CeraPro-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-Pro-Medium;
+    src: url('../fonts/CeraPro-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-Pro-Bold;
+    src: url('../fonts/CeraPro-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 120px 72px 120px;
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    margin-bottom: 140px;
+}
+
+.product-card {
+    width: 586px;
+    height: 302px;
+    display: flex;
+}
+
+.product-card img {
+    width: 287px;
+    height: 292px;
+    object-fit: scale-down;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 48px;
+}
+
+.product-card h3 {
+    color: #3D3D3D;
+    text-align: right;
+    font-family: Cera-Pro-Bold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px; 
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    max-width: 152px;
+}
+
+.product-card p {
+    color: #727272;
+    text-align: right;
+    font-family: Cera-Pro-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.find-more-btn {
+    border-radius: 6px;
+    background: #46A358;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 140px;
+    height: 40px;
+}
+
+.find-more-btn .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.find-more-btn span {
+    color: #FFF;
+    font-family: Cera-Pro-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.blog h2 {
+    color: #3D3D3D;
+    text-align: center;
+    font-family: Cera-Pro-Regular;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+    padding-bottom: 16px;
+}
+
+.blog p {
+    color: #727272;
+    text-align: center;
+    font-family: Cera-Pro-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 36px;
+}
+
+.blog-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+
+.blog-card {
+    width: 268px;
+    height: 362px;
+}
+
+.blog-card img {
+    object-fit: cover;
+}
+
+.blog-card .blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 16px 12px;
+}
+
+.blog-card .blog-date {
+    color: #46A358;
+    font-family: Cera-Pro-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+}
+
+.blog-card h3 {
+    color: #3D3D3D;
+    font-family: Cera-Pro-Bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 4px;
+}
+
+.blog-card .discription {
+    color: #727272;
+    font-family: Cera-Pro-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: 22px; 
+    padding-bottom: 8px;
+}
+
+.blog-card a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.blog-card a span {
+    color: #3D3D3D;
+    font-family: Cera-Pro-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
