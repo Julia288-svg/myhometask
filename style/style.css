@@ -63,13 +63,119 @@
     border-bottom: 3px solid transparent;
     color: #3D3D3D;
     font-size: 16px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     cursor: pointer;
 }
 
 .header > .nav > li.active {
     font-family: Cera-Pro-Bold;
     border-color: #46A358;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width: 188px;
+    background: #EDF6EE;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown:hover .list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.list-item {
+    padding: 8px 12px;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+}
+
+.item-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.sub-list {
+    position: absolute;
+    top: 0;
+    left: 190px; 
+    width: 178px;
+    top: -108px;
+    background: #EDF6EE;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none; 
+    z-index: 1;
+}
+
+
+.sub-list-item {
+    padding: 8px 12px;
+    white-space: nowrap;
+    display: block;
+}
+
+.item-with-icon:hover + .sub-list, 
+.list-item:hover .sub-list {
+    display: block;
+}
+
+.list-item:hover {
+    background: rgba(26, 113, 42, 1); 
+}
+
+.list-item:hover a {
+    font-family: Cera-Pro-Bold;
+    color:  rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.item-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-with-icon:hover img {
+    content: url('../img/Icon-white.svg'); 
+}
+
+.sub-list-item a {
+    color: #3D3D3D !important;
+    font-family: Cera-Pro-Regular !important;
+    font-size: 16px;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal;
+    display: block;
+}
+
+.list-item a {
+    color: #3D3D3D;
+    font-family: Cera-Pro-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
 }
 
 .header > .login {
