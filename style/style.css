@@ -812,7 +812,7 @@
 
 .footer-contacts {
     min-height: 88px;
-    background: rgba(70, 163, 88, 0.10);
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
     border-style: solid;
     border-width: 1px 0; 
     border-color: rgba(70, 163, 88, 0.10);
