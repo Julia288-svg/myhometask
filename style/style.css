@@ -116,8 +116,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: none; 
-    z-index: 1;
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
 }
 
 
@@ -129,7 +131,8 @@
 
 .item-with-icon:hover + .sub-list, 
 .list-item:hover .sub-list {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .list-item:hover {
