@@ -44,6 +44,11 @@
                 <img src="./img/logout.svg" alt="Logout">
                 Login
             </button>
+            <script>
+                document.querySelector('.login').addEventListener('click', function() {
+                    window.location.href = 'registration.html';
+                });
+            </script>
         </header>
         <main class="main">
             <div class="ctaContainer">
@@ -68,17 +73,71 @@
         <nav class="category-menu">
             <h2>Categories</h2>
             <ul>
-                <li class="active"><a href="#">House Plants</a></li>
-                <li><a href="#">Potter Plants</a></li>
-                <li><a href="#">Seeds</a></li>
-                <li><a href="#">Small Plants</a></li>
-                <li><a href="#">Big Plants</a></li>
-                <li><a href="#">Succulents</a></li>
-                <li><a href="#">Trerrariums</a></li>
-                <li><a href="#">Gardening</a></li>
-                <li><a href="#">Accessories</a></li>
+                <div class="categories-group">
+                <li class="categories-text active"><a href="#">House Plants </a></li>
+                <p class="class active">(33)</p>
+            </div>
+            <div class="categories-group">
+                <li class="categories-text"><a href="#">Potter Plants</a></li>
+                <p class="class">(12)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Seeds</a></li>
+                <p class="class">(65)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Small Plants</a></li>
+                <p class="class">(39)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Big Plants</a></li>
+                <p class="class">(23)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Succulents</a></li>
+                <p class="class">(17)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Trerrariums</a></li>
+                <p class="class">(19)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Gardening</a></li>
+                <p class="class">(13)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Accessories</a></li>
+                <p class="class">(18)</p>
+            </div>
             </ul>
+
+            <h2>Price Range:<h2>
+                <div class="price-filter">
+                <input type="range" id="price-range" min="0" max="1000" value="500" step="10">
+                    <div class="price-values">
+                        <span id="price">Price: <span class="green"> $39 - $1600</span></span> 
+                    </div>
+                <button id="apply-filter" class="filter-button">Filter</button>
+            </div>
+
+            <div class="categories-r">
+                <h2>Size</h2>
+            <ul>
+                <div class="categories-group">
+                <li class="categories-text active"><a href="#">Small</a></li>
+                <p class="class active">(119)</p>
+            </div>
+            <div class="categories-group">
+                <li class="categories-text"><a href="#">Medium</a></li>
+                <p class="class">(86)</p>
+            </div>
+                <div class="categories-group">
+                <li class="categories-text"><a href="#">Large</a></li>
+                <p class="class">(78)</p>
+            </div>
+            </div>
         </nav>
+
         <div class="image">
             <img src="./img/baner.png" alt="baner">
         </div>
@@ -313,17 +372,17 @@
 <footer>
     <div class="footer-section">
     <div class="footer-email">
-        <div class="footer-card">
+        <div class="footer-card card-1">
             <img src="./img/comp1.png" alt="Flower composition">
             <h3>Garden Care</h3>
             <span>We are an online plant shop offering a wide range of cheap and trendy plants.</span>
         </div>
-        <div class="footer-card" style="border-width: 0px 1px; border-style: solid; border-color: rgba(70, 163, 88, 0.10);">
+        <div class="footer-card card-2" style="border-width: 0px 1px; border-style: solid; border-color: rgba(70, 163, 88, 0.10);">
             <img src="./img/comp2.png" alt="Flower composition">
             <h3>Plant Renovation</h3>
             <span>We are an online plant shop offering a wide range of cheap and trendy plants.</span>
         </div>
-        <div class="footer-card">
+        <div class="footer-card card-3">
             <img src="./img/comp3.png" alt="Flower composition">
             <h3>Watering Graden</h3>
             <span>We are an online plant shop offering a wide range of cheap and trendy plants.</span>
